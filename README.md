@@ -60,6 +60,18 @@ transformers
 chromadb
 torch
 langchain
+langchain_core
+langchain_community
+langchain_huggingface
+langchain_text_splitters
+langchain_ollama
 ```
 
+## Setup dataset to create persistent vector database
+I have used dataset from CMU CoNaLa, the Code/Natural Language Challenge. This dataset was collected by scrawling on StackOverflow and consists of 600k mined samples.
+```bash
+wget http://www.phontron.com/download/conala-corpus-v1.1.zip
+unzip conala-corpus-v1.1.zip
+mv conala-corpus/conala-mined.jsonl conala-corpus/conala-mined.json
+```
 
